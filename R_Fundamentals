@@ -12,6 +12,7 @@ for(i in 1:10){
   j = j*2
   print(j)
 }
+or 2^(1:10)
 
 alpha = letters
 num = c(1:26)
@@ -47,5 +48,22 @@ for(i in 1:length(city)){
 
 #-----------------------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------------------
+3 Use following bit to create a vector with prime numbers in 1:47. [Prime numbers are numbers which are
+divisible only by themselves.]
+primes=c(2,3,5,7,11,13,17,19,23,29,31,37,41,43,47)
+Any number from 48 to 100 which is not divisible by any of the above listed primes is also a prime. Print
+those prime numbers from 48 to 100.
+Result will be as follows:
+## [1] 53
+## [1] 59
+## [1] 61
+## [1] 67
+## [1] 71
+## [1] 73
+## [1] 79
+## [1] 83
+## [1] 89
+## [1] 97
 
+Solution:
 
