@@ -20,3 +20,32 @@ numr= rev(num)
 paste(alpha,numr,sep="")
 ##-----------------------------------------------------------------------------------------------------------------
 ##-----------------------------------------------------------------------------------------------------------------
+
+2 Below given is a vector containing first lines of many addresses. Extract city names from all the addresses
+using string functions. Hint: you can use a for loop to iterate over results of strsplit for further processing.
+address_list=c("802/hiranandani/Mumbai",
+"2A/kalka-Delhi",
+"345#near adyar#Chennai",
+"10-shyaam bazzar-Kolkata")
+Result will be as follows:
+## [1] "Mumbai"
+## [1] "Delhi"
+## [1] "Chennai"
+## [1] "Kolkata"
+
+Solution:
+address_list=c("802/hiranandani/Mumbai",
+               "2A/kalka-Delhi",
+               "345#near adyar#Chennai",
+               "10-shyaam bazzar-Kolkata")
+temp = gsub("/","-",address_list)
+temp = gsub("#","-",temp)
+city = strsplit(temp,"-")
+for(i in 1:length(city)){
+  print(city[[i]][3])
+}
+
+#-----------------------------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------------------
+
+
